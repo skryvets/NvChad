@@ -38,6 +38,16 @@ local plugins = {
       }
     },
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate", -- Example of how to automatically update treesitter grammars
+    config = function()
+      require 'nvim-treesitter.configs'.setup {
+        -- setup options here, e.g., ensure_installed, auto_install
+        auto_install = true, -- To support auto install make sure to have tree-sitter cli installed locally
+      }
+    end,
+  },
 }
 
 return plugins
