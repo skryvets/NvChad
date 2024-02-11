@@ -5,6 +5,7 @@ local M = {}
 M.ui = { theme = 'catppuccin' }
 M.plugins = 'custom.plugins'
 M.lazy_nvim = {
+  -- Enables netrw
   performance = {
     rtp = {
       disabled_plugins = vim.tbl_filter(function(name)
